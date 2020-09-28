@@ -1,0 +1,117 @@
+<!-- どのページでも表示したいHTMLはapplication.html.erbに書いておく -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>本気で学ぶドイツ語学習サービス</title>
+
+  <!-- Import font awsesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+
+  <%= csrf_meta_tags %>
+
+
+  <!-- Import css for responsible designe -->
+  <!-- ====================
+  - Large PC                  : 1280px〜
+  - Small PC                  : 960px〜1279px
+  - Tablet                    : 600px〜959px
+  - Mobile phone(horizontal)  : 480px〜599px：
+  - Mobile phone (Vertical)   : 〜479px：
+        ==================== -->
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <!-- ここにヘッダーを書いてください -->
+  <header class="global_nav">
+    <div class="global_header_logo">
+      <% if @current_user %>
+        <%= link_to("/posts", class: "global_header_logo_link no-decolation color2black") do %>
+          <%= image_tag "Logo-pic.png", :class => "global_header_logo_pic" %>
+          <p class="global_header_logo_text">本気で学ぶドイツ語サービス</p>
+        <% end %>
+      <% else %>
+        <%= link_to("/", class: "global_header_logo_link no-decolation color2black") do %>
+          <%= image_tag "Logo-pic.png", :class => "global_header_logo_pic" %>
+          <p class="global_header_logo_text">本気で学ぶドイツ語サービス</p>
+        <% end %>
+
+      <% end %>
+    </div>
+
+    <nav>
+      <ul class="global_header_menu">
+
+        <% if @current_user %>
+          <li class="global_header_menu_item">
+            <%= link_to("User: " + @current_user.name, "/users/#{@current_user.id}" , class: "global_header_menu_item_a no-decolation color2black") %>
+          </li>
+          
+          <li class="global_header_menu_item">
+            <%= link_to("投稿一覧","/posts", class: "global_header_menu_item_a no-decolation color2black") %>
+          </li>
+          <li class="global_header_menu_item">
+            <%= link_to("新規投稿","/posts/new", class: "global_header_menu_item_a no-decolation color2black") %>
+          </li>
+          <li class="global_header_menu_item">
+            <%= link_to("ユーザー一覧","/users/index", class: "global_header_menu_item_a no-decolation color2black") %>
+          </li>
+          <li>
+            <%= link_to("ログアウト","/logout", method: :post, class: "global_header_menu_item_a no-decolation color2black") %>
+          </li>
+        <% else %>
+          <li class="global_header_menu_item">
+            <%= link_to("About","/about", class: "global_header_menu_item_a no-decolation color2black") %>
+          </li>
+          <li class="global_header_menu_item">
+            <%= link_to("新規登録","/signup", class: "global_header_menu_item_a no-decolation color2black") %>
+          </li>
+          <li class="global_header_menu_item">
+            <%= link_to("ログイン","/login", class: "global_header_menu_item_a no-decolation color2black") %>
+          </li>
+        <% end %>
+      </ul>
+    </nav>
+    <!--<i class="fa fa-bars" id="show"></i>-->
+  </header>
+  
+  <!--flash message-->
+  <% if flash[:notice] %>
+    <div class="flash">
+      <%= flash[:notice]%>
+    </div>
+  <% end %>
+
+  <!-- 各ビューファイルは以下のyieldに代入され、application.html.erbの一部となる -->
+  <%= yield %>
+
+  <footer class="global_footer">
+    <div class="global_footer_info">
+      <!--Social link-->
+      <a href="/" class="no-decolation color2white">
+        <p class="global_footer_social_link">
+          <i class="fas fa-rss"></i>  
+        </p>
+      </a>
+      <% if @current_user %>
+        <!--Logo-->
+        <%= link_to("/posts/index") do %>
+          <%= image_tag "Logo-chr.png", :class => "global_footer_logo_chr" %>
+        <% end %>
+      <% else %>
+        <!--Logo-->
+        <%= link_to("/") do %>
+          <%= image_tag "Logo-chr.png", :class => "global_footer_logo_chr" %>
+        <% end %>      
+      <% end %>
+      <!--Declaration of rights-->
+      <p class="global_footer_copylight">© Kancomi All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* ****************************************************
+// Author        : Yusaku Meguro
+// Created date  : 2020.08.16
+// Update date   : 2020.08.16
+// Version       : 0.01
+// Title         : 30_01_ChangeColor.css
+// Description   : This stylesheet defines color.
+//
+// [Hierarchy]
+//  You can find the explanation about CSS hierarchy
+//  at the following SharePoint page. 
+//  https://kancomi.sharepoint.com/sites/9000_KnowledgeBase/Coding%20Rules/CSS.aspx
+//
+**************************************************** */
+
+.color2black{
+  color           : hsl(var(--HSL_Black));
+}
+.color2lightblack{
+  color           : hsl(var(--HSL_LightBlack));
+}
+.color2dimgrey{
+  color           : hsl(var(--HSL_DimGrey));
+}
+.color2dimgray{
+  color           : hsl(var(--HSL_DimGray));
+}
+.color2gray{
+  color           : hsl(var(--HSL_Gray));
+}
+.color2lightgray{
+  color           : hsl(var(--HSL_LightGray));
+}
+.color2whitesmoke{
+  color           : hsl(var(--HSL_WhiteSnmoke));
+}
+.color2white{
+  color           : hsl(var(--HSL_White));
+}
+.color2brown{
+  color           : hsl(var(--HSL_Brown));
+}
+.color2tan{
+  color           : hsl(var(--HSL_Tan));
+}
+.color2orange{
+  color           : hsl(var(--HSL_Orange));
+}
+.color2gold{
+  color           : hsl(var(--HSL_Gold));
+}
+.color2yellowgreen{
+  color           : hsl(var(--HSL_Yellowgreen));
+}
+.color2green{
+  color           : hsl(var(--HSL_Green));
+}
+.color2skyblue{
+  color           : hsl(var(--HSL_Skyblue));
+}
+.color2darkskyblue{
+  color           : hsl(var(--HSL_DarkSkyblue));
+}

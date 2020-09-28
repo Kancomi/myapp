@@ -1,0 +1,24 @@
+/* ****************************************************
+// Author        : Yusaku Meguro
+// Created date  : 2020.08.16
+// Update date   : 2020.08.16
+// Version       : 0.01
+// Title         : 10_01_InitValues.css
+// Description   : This stylesheet defines global constants.
+//
+// [Hierarchy]
+//  You can find the explanation about CSS hierarchy
+//  at the following SharePoint page. 
+//  https://kancomi.sharepoint.com/sites/9000_KnowledgeBase/Coding%20Rules/CSS.aspx
+//
+**************************************************** */
+:root{
+  /* --- Define variables --- */
+  /* Init value */
+  --Init_0                    : 0;
+  --Init_0px                  : 0px;
+  --Init_0per                 : 0%;
+  
+  --Init_100per               : 100%;
+  /* --- --- */
+}

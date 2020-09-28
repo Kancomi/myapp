@@ -1,0 +1,226 @@
+/* ****************************************************
+// Author        : Yusaku Meguro
+// Created date  : 2020.08.05
+// Update date   : 2020.08.05
+// Version       : 0.01
+// Title         : BaseSyles.css
+// Description   : Define global styles and variables.
+//                 This stylesheet is the first of all stylesheets to be applied
+// [Hierarchy]
+//  You can find the explanation about CSS hierarchy
+//  at the following SharePoint page. 
+//  https://kancomi.sharepoint.com/sites/9000_KnowledgeBase/Coding%20Rules/CSS.aspx
+//
+// [Definition order]
+//  Each attribute is defined in the following order. 
+//  1. Layouting  : position, flexbox, etc...
+//  2. Area       : margin, padding, etc...
+//  3. Size       : width, height, etc...
+//  4. background : backgroundcolor, etc...
+//  5. Font       : font-size, color, etc...
+//  6. Action     : Cooperate with JavaScript
+**************************************************** */
+
+
+html{
+  /*1. Layouting*/
+  /*2. Area*/
+  /*3. Size*/
+  /*4. background*/
+  /*5. Font*/
+  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  /*6. Action*/
+}
+html, body{
+  /*1. Layouting*/
+  position        : relative;
+  /*2. Area*/
+  overflow-x      : hidden;
+  /*3. Size*/
+  width           : var(--Init_100per);
+  /*4. background*/
+  /*5. Font*/
+  /*6. Action*/
+}
+body{
+  /*1. Layouting*/
+  /*2. Area*/
+  margin          : var(--init_0);
+  /*3. Size*/
+  /*4. background*/
+  background      : hsl(var(--HSL_White));
+  /*5. Font*/
+  color           : hsl(var(--HSL_Black));
+  /*6. Action*/
+}
+header{
+  /*1. Layouting*/
+  /*2. Area*/
+  margin          : var(--init_0);
+  /*3. Size*/
+  /*4. background*/
+  /*5. Font*/
+  /*6. Action*/
+}
+/* Global Navigation */
+.global_nav{
+  /*1. Layouting*/
+  display         : flex;
+  justify-content : space-between;
+  /*2. Area*/
+  padding         : var(--Init_0px)
+                  2%;
+  /*3. Size*/
+  width           : auto;
+  height          : auto;
+  /*4. background*/
+  background      : hsl(var(--HSL_WhiteSmoke));
+  /*5. Font*/
+  color           : hsl(var(--HSL_Black));
+  font-size       : 16px;
+  /*6. Action*/
+}
+.global_header_logo_link{
+  /*1. Layouting*/
+  display         : flex;
+  /*2. Area*/
+  /*3. Size*/
+  /*4. background*/
+  /*5. Font*/
+  /*6. Action*/
+}
+.global_header_logo{
+  /*1. Layouting*/
+  /*2. Area*/
+  margin          : var(--init_0);
+  /*3. Size*/
+  /*4. background*/
+  /*5. Font*/
+  font-size       : 16px;
+  /*6. Action*/
+}
+.global_header_logo_pic{
+  /*1. Layouting*/
+  /*2. Area*/
+  /*3. Size*/
+  width           : 160px;
+  height          : auto;
+  /*4. background*/
+  /*5. Font*/
+  /*6. Action*/
+}
+.global_header_logo_text{
+    /*1. Layouting*/
+  /*2. Area*/
+  margin          : var(--init_0);
+  /*3. Size*/
+  height          : auto;
+  /*4. background*/
+  /*5. Font*/
+  text-align      : center;
+  line-height     : 70px;
+  /*6. Action*/
+}
+.global_header_menu{
+  /*1. Layouting*/
+  display         : flex;
+  justify-content : flex-end;
+  align-items     : center;
+  /*2. Area*/
+  margin          : var(--Init_0px)
+                    2%;
+  padding         : var(--Init_0);
+  /*3. Size*/
+  height          : 70px;
+  /*4. background*/
+  /*5. Font*/
+  list-style      : none;
+  /*6. Action*/
+}
+.global_header_menu_item{
+  /*1. Layouting*/
+  /*2. Area*/
+  margin          : var(--Init_0px)
+                    5%;
+  /*3. Size*/
+  width           : 200px;
+  /*4. background*/
+  /*5. Font*/
+  /*6. Action*/
+
+}
+
+.global_footer{
+  /*1. Layouting*/
+  /*2. Area*/
+  margin          : var(--init_0);
+  padding         : var(--Init_0px)
+                  2%;
+  /*3. Size*/
+  /*4. background*/
+  background      : hsl(var(--HSL_LightBlack));
+  /*5. Font*/
+  color           : hsl(var(--HSL_White));
+  text-align      : center;
+  /*6. Action*/
+}
+
+.global_footer_info{
+  /*1. Layouting*/
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  /*2. Area*/
+  margin          : 0% 18%;
+  /*3. Size*/
+  height          : 160px;
+  /*4. background*/
+  /*5. Font*/
+  /*6. Action*/
+}
+.global_footer_social_link{
+  /*1. Layouting*/
+  /*2. Area*/
+  /*3. Size*/
+  width           : 200px;
+  /*4. background*/
+  text-align      : left;
+  line-height     : 64px;
+  /*5. Font*/
+  /*6. Action*/
+}
+.global_footer_logo{
+  /*1. Layouting*/
+  /*2. Area*/
+  /*3. Size*/
+  width           : 200px;
+  /*4. background*/
+  /*5. Font*/
+  text-align      : center;
+  line-height     : 64px;
+  /*6. Action*/
+}
+.global_nav_logo_chr{
+  /*1. Layouting*/
+  /*2. Area*/
+  /*3. Size*/
+  width           : 240px;
+  height          : auto;
+  /*4. background*/
+  /*5. Font*/
+  /*6. Action*/
+
+}
+.global_footer_copylight{
+  /*1. Layouting*/
+  /*2. Area*/
+  /*3. Size*/
+  width           : 200px;
+  /*4. background*/
+  /*5. Font*/
+  font-size       : 12px;
+  text-align      : right;
+  line-height     : 64px;
+  /*6. Action*/
+}
+

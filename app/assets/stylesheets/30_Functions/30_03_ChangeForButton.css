@@ -1,0 +1,42 @@
+/* ****************************************************
+// Author        : Yusaku Meguro
+// Created date  : 2020.08.16
+// Update date   : 2020.08.16
+// Version       : 0.01
+// Title         : 30_01_ChangeColor.css
+// Description   : This stylesheet defines color.
+//
+// [Hierarchy]
+//  You can find the explanation about CSS hierarchy
+//  at the following SharePoint page. 
+//  https://kancomi.sharepoint.com/sites/9000_KnowledgeBase/Coding%20Rules/CSS.aspx
+//
+**************************************************** */
+
+.btn-gradient-radius {
+  /*1. Layouting*/
+  display: inline-block;
+  /*2. Area*/
+  /*3. Size*/
+  padding: 7px 20px;
+  border-radius: 25px;
+  /*4. background*/
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  /*5. Font*/
+  font-size: 20px;
+  text-decoration: none;
+  color: #FFF;
+  /*6. Action*/
+  transition: .4s;
+}
+
+.btn-gradient-radius:hover {
+  /*1. Layouting*/
+  /*2. Area*/
+  /*3. Size*/
+  /*4. background*/
+  background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+  /*5. Font*/
+  /*6. Action*/
+
+}

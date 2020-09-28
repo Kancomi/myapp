@@ -1,0 +1,19 @@
+/* ****************************************************
+// Author        : Yusaku Meguro
+// Created date  : 2020.08.16
+// Update date   : 2020.08.16
+// Version       : 0.01
+// Title         : 30_01_ChangeColor.css
+// Description   : This stylesheet defines color.
+//
+// [Hierarchy]
+//  You can find the explanation about CSS hierarchy
+//  at the following SharePoint page. 
+//  https://kancomi.sharepoint.com/sites/9000_KnowledgeBase/Coding%20Rules/CSS.aspx
+//
+**************************************************** */
+
+.no-decolation{
+  text-decoration : none;
+  font-weight　   : normal;
+}

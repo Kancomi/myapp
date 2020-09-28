@@ -1,0 +1,38 @@
+/* ****************************************************
+// Author        : Yusaku Meguro
+// Created date  : 2020.08.16
+// Update date   : 2020.08.16
+// Version       : 0.01
+// Title         : 10_02_Color.css
+// Description   : This stylesheet defines color.
+//
+// [Hierarchy]
+//  You can find the explanation about CSS hierarchy
+//  at the following SharePoint page. 
+//  https://kancomi.sharepoint.com/sites/9000_KnowledgeBase/Coding%20Rules/CSS.aspx
+//
+**************************************************** */
+
+:root{
+
+
+  /* --- Define Colors --- */
+  /*You can see the information of cooperate colors.*/
+  --HSL_Black         : 0  , 0%  , 0%;
+  --HSL_LightBlack    : 0  , 0%  , 13%;
+  --HSL_DimGrey       : 0  , 0%  , 47%;
+  --HSL_DimGray       : 0  , 0%  , 50%;
+  --HSL_Gray          : 0  , 0%  , 60%;
+  --HSL_LightGray     : 0  , 0%  , 93%;
+  --HSL_WhiteSmoke    : 0  , 0%  , 96%;
+  --HSL_White         : 0  , 0%  , 100%;
+  --HSL_Brown         : 29 , 21% , 47%;
+  --HSL_Tan           : 31 , 25% , 61%;
+  --HSL_Orange        : 17 , 100%, 61%;
+  --HSL_Gold          : 46 , 66% , 62%;
+  --HSL_Yellowgreen   : 79 , 57% , 57%;
+  --HSL_Green         : 79 , 72% , 44%;
+  --HSL_Skyblue       : 198, 68% , 74%;
+  --HSL_DarkSkyblue   : 197, 68% , 66%;
+
+}
